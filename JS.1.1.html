@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS.1.1</title>
+    <script src="array.js"></script>
+</head>
+<body>
+  <h2>Assignment JS.1.1</h2>
+
+<p id="list"></p>
+
+  <script>
+
+      var country, array_length, i;
+      array_length = languages.length;
+
+      array = "<ol>";
+      for (i = 0; i < array_length; i++) {
+          array += "<li>" + languages[i].countrycode + " - " + languages[i].language + " - " + (languages[i].percentage/100 * languages[i].population).toFixed(0) + "</li>";
+      }
+      array += "</ol>";
+
+      document.getElementById("list").innerHTML = array;
+
+      console.log(array);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS.1.2</title>
+    <script src="array.js"></script>
+</head>
+<body>
+  <h2>Assignment JS.1.2</h2>
+
+<p id="list"></p>
+
+  <script>
+
+  var i, language, spoken, countries;
+
+  countries = [];
+
+  for (i = 0; i < languages.length; i++) {
+      if (! countries[languages[i].language]) {
+          countries[languages[i].language] = Math.floor(languages[i].percentage * languages[i].population / 100);
+      } else {
+          countries[languages[i].language] += Math.floor(languages[i].percentage * languages[i].population / 100);
+      }
+  }
+
+    for (language in countries) {
+      spoken = language + " ";
+      spoken += countries[language];
+      console.log(spoken);
+    }
+
+  </script>
+
+</body>
+</html>
